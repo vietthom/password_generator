@@ -64,7 +64,18 @@ function generatePassword(){
     if(addSpecialCharacters){
       userInputs = userInputs.concat(specChar);
     }
+    if (!addNumbers && !addUpperCase && !addLowerCase && !addSpecialCharacters){
+      alert('No password created');
+    };
+    let result = '';
+    for(let i=0; i < passwordLength; i++){
+      result = result + userInputs[Math.floor(Math.random() * userInputs.length)];
+      console.log(result);
+    }
+    return result;
+    
   }
+
 };
 // Write password to the #password input
 function writePassword() {
