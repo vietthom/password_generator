@@ -12,3 +12,9 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+
